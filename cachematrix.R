@@ -1,7 +1,5 @@
-## Put comments here that give an overall description of what your
-## functions do
-
-## Write a short comment describing this function
+## The below functions take the input, checks and finds the inverse !!
+## makeCachematrix gets the input of the matrix to be inversed
 
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
@@ -16,7 +14,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## make Function
+## CacheSolve checks if the inverse is already cached first
+## If not it finds and returns inverse of the matrix
 
 cacheSolve <- function(x, ...) {
          inv <- x$getinverse()
@@ -30,4 +29,3 @@ cacheSolve <- function(x, ...) {
   inv
 }
 
-## Checks for reverse and returns the reverse function of the matrix
